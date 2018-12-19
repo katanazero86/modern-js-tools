@@ -84,7 +84,7 @@ mode가 development면 개발용, production이면 배포용입니다. 배포용
 
 entry
 entry 부분이 웹팩이 파일을 읽어들이기 시작하는 부분
-설정에 따라, 코드 분할(Code	splitting)도 가능하다.npm	install	--save-dev	webpack-dev-server
+설정에 따라, 코드 분할(Code	splitting)도 가능하다.
 
 output
 path는 output으로 나올 파일이 저장될 경로입니다. 
@@ -101,6 +101,8 @@ options 에 보면, modules: false라는 옵션이 있는데
 webpack-dev-server
 webpack-dev-server는 간단한 웹 서버를 제공하며 
 실시간 재로드를 제공하므로 페이지를 수동으로 새로 고침하여 변경 사항을 확인할 필요가 없습니다.
+
+npm i --save-dev webpack-dev-server
  
  devServer: {
          port: 9000,
