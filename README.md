@@ -65,12 +65,12 @@ https://babeljs.io/docs/en/babel-cli
 - 웹팩은 모듈 번들러 입니다. 
 - 웹팩은 상호 의존성이 있는 모듈들을 사용해 그 모듈들과 같은 역할을 하는 정적 에셋들을 생성
 (모듈을 모아서 컴파일 후, 하나의 번들 파일로 만든다.)
-
- 웹팩4부터는 webpack-cli를 같이 설치해야 커맨드라인에 webpack이란 명령어를 사용
+웹팩4부터는 webpack-cli를 같이 설치해야 커맨드라인에 webpack이란 명령어를 사용
  
 npm i --save-dev webpack
 npm i --save-dev webpack-cli
 npm i --save-dev webpack-dev-server
+npm i --save-dev babel-loader
 
 
 설치를 완료했으면, 설정파일을 하나 만들어주자.(root dir)
@@ -92,7 +92,6 @@ publicPath는 파일들이 위치할 서버 상의 경로
 filenmame은 결과물 파일명 입니다.
 
 loader
-npm i --save-dev babel-load
 
 로더를 사용하면, 웹팩이 모듈을 컴파일 하기전에 프리 프로세스를 실행할 수 있다.
 options 에 보면, modules: false라는 옵션이 있는데
@@ -103,8 +102,6 @@ webpack-dev-server
 webpack-dev-server는 간단한 웹 서버를 제공하며 
 실시간 재로드를 제공하므로 페이지를 
 수동으로 새로 고침하여 변경 사항을 확인할 필요가 없습니다.
-
-npm i --save-dev webpack-dev-server
  
  devServer: {
          port: 9000,
@@ -115,5 +112,5 @@ npm i --save-dev webpack-dev-server
          open: true,
          index: 'index.html',
 },
-
+옵션참고 : https://webpack.js.org/configuration/dev-server/
 ```
