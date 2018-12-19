@@ -1,9 +1,17 @@
 const path = require('path')
+const webpack = require('webpack')
 module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: "/"
+    },
+    devServer: {
+      port: 9000,
+      hot: true,
+      contentBase: './dist',
+      watchContentBase: true,
     },
     module: {
         rules: [
@@ -26,6 +34,8 @@ module.exports = {
             },
             ],
     },
-    plugins: [],
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ],
     optimization: {},
 }
