@@ -62,9 +62,6 @@ https://babeljs.io/docs/en/babel-cli
 #### Webpack
 ```
 웹팩이란?
-```
-
-웹팩이란?
 - 웹팩은 모듈 번들러 입니다. 
 - 웹팩은 상호 의존성이 있는 모듈들을 사용해 그 모듈들과 같은 역할을 하는 정적 에셋들을 생성
 (모듈을 모아서 컴파일 후, 하나의 번들 파일로 만든다.)
@@ -120,6 +117,4 @@ npm i --save-dev webpack-dev-server
 },
 
 https://webpack.js.org/configuration/dev-server/
-
- 
 ```
