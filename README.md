@@ -116,5 +116,4 @@ npm i --save-dev webpack-dev-server
          index: 'index.html',
 },
 
-https://webpack.js.org/configuration/dev-server/
 ```
