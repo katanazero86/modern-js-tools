@@ -59,7 +59,6 @@ https://babeljs.io/docs/en/babel-cli
 
 ```
 
-
 #### Webpack
 
 ```
@@ -102,5 +101,18 @@ options 에 보면, modules: false라는 옵션이 있는데
 webpack-dev-server
 webpack-dev-server는 간단한 웹 서버를 제공하며 
 실시간 재로드를 제공하므로 페이지를 수동으로 새로 고침하여 변경 사항을 확인할 필요가 없습니다.
+ 
+ devServer: {
+         port: 9000,
+         hot: true,
+         contentBase: path.resolve(__dirname, 'dist'),
+         watchContentBase: true,
+         compress: true,
+         open: true,
+         index: 'index.html',
+},
+
+https://webpack.js.org/configuration/dev-server/
+
  
 ```
