@@ -1,0 +1,43 @@
+{
+  "name": "modern-js-tools",
+  "version": "1.0.0",
+  "description": "Modern JavaScript Tools",
+  "main": "index.js",
+  "scripts": {
+    "babel-build": "babel src --out-dir babel_result",
+    "babel-build2": "babel babelTest2.js -d babel_result",
+    "webpack-build": "webpack --mode development --watch",
+    "webpack-build2": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://phpbae@bitbucket.org/phpbae/modern-js-tools.git"
+  },
+  "author": "phpbae",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/phpbae/modern-js-tools#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
