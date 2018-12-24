@@ -8,7 +8,9 @@
     "babel-build2": "babel babelTest2.js -d babel_result",
     "webpack-build": "webpack --mode development --watch",
     "webpack-build2": "webpack --mode production",
+    "webpack-build3": "webpack --config webpack.dev2.config.js --mode production",
     "webpack-dev": "webpack-dev-server --config webpack.dev.config.js --progress --mode development",
+    "webpack-dev2": "webpack-dev-server --config webpack.dev2.config.js --progress --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "babel": {

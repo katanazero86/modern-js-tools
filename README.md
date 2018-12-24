@@ -80,28 +80,27 @@ npm i --save-dev babel-loader
 webpack.config.js
 
 
-mode
+- mode
 웹팩4에서 추가되었습니다. 
 mode가 development면 개발용, production이면 배포용입니다. 
 배포용일 경우에는 알아서 최적화가 적용
 
-entry
+- entry
 entry 부분이 웹팩이 파일을 읽어들이기 시작하는 부분
 설정에 따라, 코드 분할(Code	splitting)도 가능하다.
 
-output
+- output
 path는 output으로 나올 파일이 저장될 경로입니다. 
 publicPath는 파일들이 위치할 서버 상의 경로
 filenmame은 결과물 파일명 입니다.
 
-loader
-
+- loader
 로더를 사용하면, 웹팩이 모듈을 컴파일 하기전에 프리 프로세스를 실행할 수 있다.
 options 에 보면, modules: false라는 옵션이 있는데
 이 설정은 Babel이 import 및 export 명령문을 ES5로 
 변환하는 것을 방지하고 동적 가져 오기를 활성화합니다.
 
-webpack-dev-server
+- webpack-dev-server
 webpack-dev-server는 간단한 웹 서버를 제공하며 
 실시간 재로드를 제공하므로 페이지를 
 수동으로 새로 고침하여 변경 사항을 확인할 필요가 없습니다.
@@ -116,4 +115,6 @@ webpack-dev-server는 간단한 웹 서버를 제공하며
          index: 'index.html',
 },
 옵션참고 : https://webpack.js.org/configuration/dev-server/
+
+
 ```
