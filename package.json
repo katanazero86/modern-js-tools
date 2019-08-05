@@ -28,13 +28,8 @@
       ]
     ]
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://phpbae@bitbucket.org/phpbae/modern-js-tools.git"
-  },
-  "author": "phpbae",
+  "author": "kyle",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/phpbae/modern-js-tools#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.0",
     "@babel/core": "^7.2.2",

@@ -18,6 +18,16 @@ npm i --save-dev @babel/cli
 npm i --save-dev @babel/preset-env
 npm i --save-dev @babel/core
 
+- 속성
+presets : plugin 여러개가 묶여있는 개념(ES6 플러그인 모음집(let, const, destructuring 등) => es2016 preset)
+plugins : 각 문법 하나가 plugin
+
+bebel-polyfill : babel은 문법을 변환해주는 역할만 한다. 그래서 새롭게 추가된 전역객체들은 
+core.js / plugin-transform-runtime 와 같은 별도의 polyfill 이 필요.
+babel-polyfill 은 런타임에 실행.
+core.js / regenerator-runtime 에 대한 의존성을 가지고 있다.
+npm i --save @babel/polyfill
+
 .babelrc 파일을 생성하여, preset을 설정해 주자.
 .babelrc는 바벨에 대해 설정을 하는 파일입니다. 여기에 preset이나 plugin을 연결하면 됩니다.
 {
@@ -31,8 +41,7 @@ npm i --save-dev @babel/core
   ]
 }
 
-
-아니면, package.json 파일에
+- package.json 설정
 "babel":{
 		// config
 }
@@ -87,7 +96,7 @@ mode가 development면 개발용, production이면 배포용입니다.
 
 - entry
 entry 부분이 웹팩이 파일을 읽어들이기 시작하는 부분
-설정에 따라, 코드 분할(Code	splitting)도 가능하다.
+설정에 따라, 코드 분할(Code splitting : 코드분할)도 가능하다.
 
 - output
 path는 output으로 나올 파일이 저장될 경로입니다. 
